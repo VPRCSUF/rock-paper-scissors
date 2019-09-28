@@ -108,12 +108,8 @@ int main() {
   //Random number generator seed
   srand(time(NULL));
 
-    //Randomly generate Computer Generated Hand
-    int ComputerHand = rand() % 3 + 1,
-        UserHand;
-
-    cout << "\n-----------------------------------------------------------------";
-    cout << "\n***Let's play rock, paper, scissors!***\n";
+   cout << "\n-----------------------------------------------------------------";
+   cout << "\n***Let's play rock, paper, scissors!***\n";
 
     //Check if the user has played the computer before
     if (GAMESPLAYED == 0) {
@@ -144,7 +140,10 @@ int main() {
 
     //Start game loop using do-while loop
     do {
-
+      //Randomly generate Computer Generated Hand
+      int ComputerHand = rand() % 3 + 1,
+      UserHand;
+        
       //Prompt user to make their choice
       cout << "\n-----------------------------------------------------------------";
       cout << "\nReady? Rock, paper, scissors...\n";
